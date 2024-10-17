@@ -1,0 +1,20 @@
+h1 {            
+    font-size: 30px;          
+}
+
+h2 {
+    color: green;
+    font-size: 20px;
+    background-color: beige;
+}
+
+/* Classe Css */
+.textecentrecolorerouge {
+    text-align: center;
+    color: red;
+}
+
+.textebackgroundcolorred {
+    background-color: red;
+    color: white;
+}

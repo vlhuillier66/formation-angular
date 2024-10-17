@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Permet d'adapter à l'écran -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.debug {
+    border: 1px solid red;
+}
+.hauteurheader {
+    height: 15%;
+    background-color:darkgoldenrod;
+}
+.row {
+/* Alignement flexible : tant qu'il reste de la place je peux ajouter */
+display: flex;
+width: 1500px;
+        }
+
+        /* Direction d'alignement : en lignes */
+        .directionrow {
+            flex-direction: row;
+        }
+        /* Direction d'alignement : en colonnes */
+        .directionCOL {
+            flex-direction: column ;
+        }
+.wrap {
+    flex-wrap: wrap;
+}
+        .col {
+            width: 200px;
+        }
+
+        @media screen and (max-width: 800px) {
+            /* Surcharge de la taille de la colonne si taille écran = 800px */
+            .row {
+                width: 500px;
+            }
+        }
+        .fixed {
+            position: fixed;
+        }
+        .p10 {
+            padding: 10px;
+        }
+        .header {
+            left:0;
+            top:0;
+            margin: 10px;
+            width: 100%;
+        }
+        .footer {
+            bottom: 0;
+            width: 100%;
+        }
+        .ontainer {
+
+        }
+        .container .row {
+
+        }
+        .container .column {
+
+        }
+        .container .flexible {
+            display: flex;
+        }
+        .mt50
+        {
+            margin-top:  50px;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed header debug row directionrow">
+        <div class="container">
+            <div class="row flexible">
+                <div class="colum">
+                    Logo
+                </div>
+                <div class="colum">
+                    Premier Meniu
+                </div>
+            </div>
+        </div>
+    </header >
+        <section class="mt50"> 
+            <article titre="Image"></article>
+             <div class="row flexible debug">
+                <div class="column">
+                    <h1>Titre 1</h1>
+                </div>
+                <div class="column"> [...]</div>
+             </div>
+             <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <img src="img/images.jfif" alt="Chewie">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        like
+                    </div>
+                    <div class="column">
+                        share
+                    </div>
+                </div>
+            </div>
+                            
+            </article>
+
+        </section>       
+
+ 
+    <footer class="footer fixed row">
+        <div class="col debug">1</div>
+        <div class="col debug">2</div>
+        <div class="col debug ">3</div>
+    </footer>
+</body>
+</html>

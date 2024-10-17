@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.flex {
+    display: flex;
+}
+
+.debug 
+{
+    border: 1px solid red ;
+
+}
+
+.centpercent {
+    width:100%;
+}
+
+.container .row {
+    flex-direction: row;
+    width:100%; 
+    padding: 10px;
+    
+}
+
+.container .column {
+flex-direction: column;
+width: 100px;
+}
+
+.automargin {
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.taillemax 
+{
+    width: 500px;
+}
+
+@media screen and (max-width: 800px) {
+    .container { width:500px;}
+}
+
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="container debug">
+
+            <div class="row flex debug">
+                <div class="column debug">
+                    <h1>Titre</h1>
+                </div>
+                <div class="column debug">
+                    <h1>Menu</h1>
+                </div>
+            </div>
+        </div>    
+    </header>
+<article>
+<section class="taillemax automargin section container debug" style="margin-top: 10px;">
+    <header style="margin-bottom: 10px;"  class="container centpercent flex ">
+        
+        <div class="row flex debug">
+            <div class="column">
+                <h1>Titre</h1>
+
+            </div>
+            <div class="column">
+                <h1>[...]</h1>
+            </div>
+        </div>
+    </header>
+          
+    <div class="row flex">
+        <div class=" automargin debug">
+            <img src="img/images.jfif" alt="Wookie Wookie">
+        </div>
+ 
+    </div>
+    <div class="row">
+
+</section>
+</article>
+</body>
+</html>

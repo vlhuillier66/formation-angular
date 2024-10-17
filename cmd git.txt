@@ -4,6 +4,9 @@ initier le repositort
 ajout fichier 
 ==> git add "nom du fichier"
 
+sauvegarde photo 
+==> git commit -m "Nom de la photo"
+
 Configurer utilisateur 
 git config --global user.email "you@exemple.com"
 git config --global user.name"your Name"

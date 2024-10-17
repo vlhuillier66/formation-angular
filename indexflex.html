@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Permet d'adapter à l'écran -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.debug {
+    border: 1px solid red;
+}
+.row {
+/* Alignement flexible : tant qu'il reste de la place je peux ajouter */
+display: flex;
+width: 1500px;
+        }
+
+        /* Direction d'alignement : en lignes */
+        .directionrow {
+            flex-direction: row;
+        }
+        /* Direction d'alignement : en colonnes */
+        .directionCOL {
+            flex-direction: column ;
+        }
+.wrap {
+    flex-wrap: wrap;
+}
+        .col {
+            width: 200px;
+        }
+
+        @media screen and (max-width: 800px) {
+            /* Surcharge de la taille de la colonne si taille écran = 800px */
+            .row {
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row directionrow wrap">
+        <div class="col  debug">1</div>
+        <div class="col  debug">2</div>
+        <div class="col  debug ">3</div>
+    </div>
+</body>
+</html>
