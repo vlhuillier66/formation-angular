@@ -1,0 +1,24 @@
+initier le repositort 
+==> git init
+
+ajout fichier 
+==> git add "nom du fichier"
+
+ajout de tous les fichiers 
+==> git add .
+
+sauvegarde photo 
+==> git commit -m "Nom de la photo"
+
+Configurer utilisateur 
+git config --global user.email "you@exemple.com"
+git config --global user.name"your Name"
+
+git status
+==> voir le status git
+
+
+git log 
+==> voir les logs
+
+
